@@ -1,0 +1,13 @@
+def common(A,B,C):
+    result = set(A) & set(B) & set(C)
+    for num in sorted(result):
+        print(num, end =" ")
+
+A = [1,2,3,5,8]
+B = [1,3,8,9]
+C = [3,8,10]
+
+common(A,B,C)
+
+'''set(A), set(B), and set(C) convert the given lists into sets. This removes duplicates (if any) and allows efficient set operations.'''
+'''The & (bitwise AND) operator, when used with sets, performs an intersection, meaning it finds elements that are present in all three sets.'''
