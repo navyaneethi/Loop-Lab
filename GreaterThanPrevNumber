@@ -1,0 +1,21 @@
+'''Given an integer array Arr of size N, find the count of elements 
+that are greater than all of their previous elements. First element is always counted .
+N = 5  size of array
+Arr = [7,4,8,2,9]'''
+
+def count_greater_elements(arr):
+    if not arr:
+        return 0
+    count = 1 
+    max_so_far = arr[0]
+    for i in arr:
+        if i > max_so_far:
+            count+=1
+            max_so_far = i
+    return count
+n = int(input())
+arr=[]
+for i in range(n):
+    x=int(input())
+    arr.append(x)
+print(count_greater_elements(arr))  # Output: 3
