@@ -1,5 +1,5 @@
 n = int(input())
-diff = 6
+diff = n
 num = 1
 print(num)
 for i in range(1,n):
