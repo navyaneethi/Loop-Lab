@@ -1,4 +1,3 @@
-
 public class checkDigits {
     public static boolean onlyDigits(String s){
         for (int i=0; i<s.length(); i++){
